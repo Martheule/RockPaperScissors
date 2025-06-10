@@ -22,4 +22,4 @@ https://github.com/Martheule/RockPaperScissors
 
 ## EMOJI 4 life.
 
-2020-06-11
+2025-06-11
