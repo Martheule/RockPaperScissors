@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chocolate RPS 🍫</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-yellow-50 min-h-screen flex flex-col items-center justify-center font-sans p-4 sm:p-6"
+  >
+    <header class="text-center mb-8">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-2 text-brown-700">
+        🍫 Chocolate Rock Paper Scissors
+      </h1>
+      <p class="text-base sm:text-lg text-brown-600">
+        Pick a chocolate and press Play!
+      </p>
+    </header>
+
+    <main class="flex flex-col items-center w-full max-w-2xl">
+      <section class="mb-6 w-full">
+        <ul
+          class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 list-none p-0 m-0"
+        >
+          <li
+            data-choice="dark"
+            class="choice text-6xl cursor-pointer border-4 border-transparent rounded-lg p-4 hover:scale-110 transition-transform text-center w-full sm:w-auto"
+          >
+            🍫
+            <div class="text-sm mt-2 text-brown-700">Dark</div>
+          </li>
+          <li
+            data-choice="milk"
+            class="choice text-6xl cursor-pointer border-4 border-transparent rounded-lg p-4 hover:scale-110 transition-transform text-center w-full sm:w-auto"
+          >
+            🍬
+            <div class="text-sm mt-2 text-brown-700">Milk</div>
+          </li>
+          <li
+            data-choice="white"
+            class="choice text-6xl cursor-pointer border-4 border-transparent rounded-lg p-4 hover:scale-110 transition-transform text-center w-full sm:w-auto"
+          >
+            🍥
+            <div class="text-sm mt-2 text-brown-700">White</div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="mb-6">
+        <button
+          id="playBtn"
+          class="bg-amber-700 text-white px-6 py-2 rounded-md text-lg hover:bg-amber-800 transition"
+        >
+          Play!
+        </button>
+      </section>
+
+      <section class="text-center w-full px-4">
+        <p
+          id="result"
+          class="text-lg font-semibold text-brown-800 mt-4 break-words"
+        ></p>
+      </section>
+    </main>
+
+    <footer class="mt-12 text-sm text-gray-500 text-center">
+      &copy; 2025 Chocolate Game Factory 🍫
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
